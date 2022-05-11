@@ -1,0 +1,2 @@
+# class-contd
+Python class
