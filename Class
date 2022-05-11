@@ -1,0 +1,36 @@
+class Man:
+	def __init__ (self, name, complexion):
+		self.name=name
+		self.complexion=complexion
+		self.height= 0
+		self.age= 0
+	def describe_man(self):
+		print("LIVING BEING: The man's name is"+" " + self.name)
+		print("His complexion is"+" "+ self.complexion)
+    
+    
+man=Man("Debo","dark")
+man.age=27
+man.height=6
+man.describe_man()		
+
+class House:
+	def __init__ (self, type, no_of_rooms ):
+		self.type=type
+		self.no_of_rooms = no_of_rooms
+	def about_house(self):
+		about = ("PHYSICAL OBJECT: His house is a"+" "+ self.type +" " +"with" + " " + " " + self.no_of_rooms + " " + "rooms") 
+		return about
+		
+house=House("Flat", "three")
+print(house.about_house())
+
+class Career:
+	def __init__ (self, education_level, job):
+			self.education_level=education_level
+			self.job=job
+	def profile(self):
+			print(self.education_level)
+			print(self.job)
+career=Career("VITUAL ENTITY: He holds a Bachelor in computer science","He is a Cloud engineer at Amazon")
+career.profile()
